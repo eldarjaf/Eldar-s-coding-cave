@@ -7,3 +7,5 @@ This is the first file in this repository.
 Zetiramin mamasi, TOMA
 
 Mahizer gozel xanimdi
+
+Ama nesli goycekdiiiii
