@@ -27,7 +27,7 @@ public class Location {
 
     @Id
     private int id;
-    private String code;  //no need for @Column because fields name same with columns
+    private String code;  //no need for @Column because field names are the same with the columns
     private String name;
     private String type;
 

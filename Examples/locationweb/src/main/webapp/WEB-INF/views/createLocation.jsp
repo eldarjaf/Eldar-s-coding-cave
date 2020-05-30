@@ -22,6 +22,6 @@
 </form>
 ${message}
 
-
+<a href="displayLocation">View All</a>
 </body>
 </html>
