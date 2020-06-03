@@ -1,5 +1,6 @@
 package com.eldar.flightreservation.entities;
 
+import lombok.Builder;
 import lombok.Data;
 
 import javax.persistence.Column;
@@ -8,6 +9,7 @@ import javax.persistence.Table;
 
 @Data
 @Entity
+@Builder(toBuilder = true)
 @Table(name = "PASSENGER")
 public class Passenger extends AbstractEntity{
     @Column(name = "FIRST_NAME")

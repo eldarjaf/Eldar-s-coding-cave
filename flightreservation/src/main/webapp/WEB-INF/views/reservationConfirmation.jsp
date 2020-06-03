@@ -2,15 +2,12 @@
 <html>
 <head>
 
-    <title>Find Flights</title>
+    <title>Reservation Confirmation</title>
 
 </head>
-
-
 <body>
-<h2>Find Flights:</h2>
 
-
+${msg}
 
 </body>
 </html>

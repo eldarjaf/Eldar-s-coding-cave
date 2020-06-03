@@ -21,12 +21,16 @@ public class UserController {
         return "login/registerUser";
     }
 
-    @RequestMapping(value = "/registerUser", method = RequestMethod.GET)
+    @RequestMapping(value = "/registerUser", method = RequestMethod.POST)
     public String register(@ModelAttribute("user") User user) {
         userRepository.save(user);
         return "login/login";
     }
 
+    @RequestMapping(value = "/showLogin",method = RequestMethod.GET)
+    public String showLoginPage() {
+        return "login/login";
+    }
 
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public String login(@RequestParam("email") String email,
@@ -34,7 +38,7 @@ public class UserController {
                         ModelMap modelMap) {
         User user = userRepository.findByEmail(email);
         if (user.getPassword().equals(password)) {
-            return "login/findFlights";
+            return "findFlights";
         } else {
             modelMap.addAttribute("msg", "Invalid user name or password. Please, try again.");
             return "login/login";
